@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            text-align: center;
+            font-family: monospace;
+        }
+
+        #text {
+            text-shadow: 2px 2px 3px crimson;
+            /* (right-ofset)px (left-ofset)px (fade)px */
+            text-decoration: line-through;
+        }
+
+        #box {
+            box-shadow: 10px 10px 5px crimson;
+            /* (right-ofset)px (left-ofset)px (fade)px */
+            text-decoration: underline;
+        } 
+
+        #indent {
+            text-indent: 100px;
+            text-decoration: overline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="text">We can use text-shadow to give shadow to the text itself.</h1><br>
+
+    <h1 id="box">Or use box-shadow to give shadow to the element.</h1><br><br>
+
+    <div>
+        <p>This is an example of text-indent.</p><br>
+        <p id="indent">This is an example of text-indent.</p>
+    </div>
+</body>
+
+</html>
