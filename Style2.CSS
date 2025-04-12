@@ -1,0 +1,21 @@
+a:hover {
+    color: crimson;
+}
+
+li:nth-child(2) {
+    background-color: crimson;
+}
+
+div:not(.class1) {
+    border: 2px dashed red;
+}
+
+.decorated::before {
+    content: STAR⭐;
+    color: blue;
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: goldenrod;
+}
