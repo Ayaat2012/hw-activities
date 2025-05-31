@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2 style="color: plum;">JavaScript Datatypes, Let Keywords and Loops</h2>
+    <p id="result"></p>
+    <script>
+        var i; //i is undefined
+        var text = "";
+        {
+            let i = 0; //assigning a value for i only within the block
+            while (i < 10) {
+                text = "The values inside the block : " + i + "<br>";
+                i++;
+            }
+            document.getElementById("result").innerHTML = text;
+        }
+        document.write("The value of i outside the block is : " + i);
+    </script>
+    
+    <h2 style="color: powderblue;">JavaScript While Loop</h2>
+    <p id="number"></p>
+    <script>
+        var text = "";
+        var i = 0;
+        while (i < 30) {
+            text = text + "<br>The number is " + i;
+            i++; //increments value of i by 1
+        }
+        document.getElementById("number").innerHTML = text;
+    </script>
+</body>
+</html>
