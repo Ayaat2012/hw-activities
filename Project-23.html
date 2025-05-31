@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2 style="color:darkseagreen;">JavaScript Arrays</h2>
+    <h2 style="color:cadetblue;">join() and pop()</h2>
+    <p>The join() method joins array elements into a string, and the pop() method removes the last element from an array.</p>
+    <p id="demo"></p>
+    <p id="myJoin"></p>
+    <p id="originalArray"></p>
+    <p id="myFirstPop"></p>
+    <p id="mySecondPop"></p>
+
+    <script>
+        var Objects = [".firstName", ".age", ".acos", ".asin", ".atan", "findMax"];
+        document.getElementById("demo").innerHTML = Objects[4]
+
+        document.getElementById("myJoin").innerHTML = Objects.join(" * ");
+        document.getElementById("originalArray").innerHTML = Objects;
+        Objects.pop();
+        document.getElementById("myFirstPop").innerHTML = Objects;
+        Objects.pop();
+        document.getElementById("mySecondPop").innerHTML = Objects
+    </script>
+</body>
+</html>
