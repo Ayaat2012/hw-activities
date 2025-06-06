@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <center>
+        <h2 style="color:mediumvioletred;">JavaScript Class Inheritance</h2>
+    <p id="details"></p>
+
+    <script>
+        class Car {
+            constructor(brand) {
+                this.carname = brand;
+            }
+            present() {
+                return 'I have a ' + this.carname;
+            }
+        }
+        class Model extends Car {
+            constructor(brand, mod) {
+                super(brand); //calls the parent class (Car) constructor
+                this.model = mod;
+            }
+            //method combines the inherited present() and adds model info
+            show() {
+                return this.present() + ', it is a ' + this.model;
+            }
+        }
+        let myCar = new Model("Ford", "Mustang");
+        document.getElementById("details").innerHTML = myCar.show();
+    </script>
+
+    <h2 style="color: mediumvioletred;">JavaScript Static Methods</h2>
+    <p id="hello"></p>
+    <p id="hi"></p>
+    <p id="welcome"></p>
+
+    <script>
+        class student {
+            constructor(name) {
+                this.studentname = name;
+            }
+            static hello() { //static method
+                return "Hello!!";
+            }
+            static welcome(x) {
+                return "Welcome " + x.studentname;
+            }
+            hi() {
+                return "Hi " + this.studentname;
+            }
+        }
+        myname = new student("Carol");
+        // Call 'hello()' on the class Student and NOT on the 'myname' object because 'hello()' is a static method and it can't access object
+        document.getElementById("hello").innerHTML = Student.hello();
+        // Call 'hi()' on the 'myname' object:
+        document.getElementById("hi").innerHTML = myname.hi();
+        // Call 'welcome()' can access the object since the parameter is passed
+        document.getElementById("welcome").innerHTML = Student.welcome(myname);
+    </script>
+    </center>
+</body>
+</html>
