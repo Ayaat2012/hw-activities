@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <center>
+    <h2>JavaScript Mapping</h2>
+    <p id="product_value"></p>
+
+    <script>
+        var numbers = [30, 70, 20, 90];
+
+        function myFunction(num) {
+            return num / 10;
+        }
+        var newarray = numbers.map(myFunction);
+        //.map() goes through every element in number array. It applies myFunction to each element
+        document.getElementById("product_value").innerHTML = newarray;
+    </script>
+
+    <h2>JavaScript Array Sorting</h2>
+    <button onclick="ascending()">Ascending Order</button>
+    <button onclick="descending()">Descending Order</button>
+    <p id="result"></p>
+
+    <script>
+        var points = [3, 7, 2, 9];
+        document.getElementById("result").innerHTML = points;
+        function ascending() {
+            points.sort(function (a, b) {return a - b});
+            document.getElementById("result").innerHTML = points;
+        }
+        function descending() {
+            points.sort(function (a, b) {return b - a});
+            document.getElementById("result").innerHTML = points;
+        }
+    </script>
+</body>
+</html>
