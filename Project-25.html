@@ -49,13 +49,13 @@
                 return "Hi " + this.studentname;
             }
         }
-        myname = new student("Carol");
+        myname = new student("Alana");
         // Call 'hello()' on the class Student and NOT on the 'myname' object because 'hello()' is a static method and it can't access object
-        document.getElementById("hello").innerHTML = Student.hello();
+        document.getElementById("hello").innerHTML = student.hello();
         // Call 'hi()' on the 'myname' object:
         document.getElementById("hi").innerHTML = myname.hi();
         // Call 'welcome()' can access the object since the parameter is passed
-        document.getElementById("welcome").innerHTML = Student.welcome(myname);
+        document.getElementById("welcome").innerHTML = student.welcome(myname);
     </script>
     </center>
 </body>
