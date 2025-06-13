@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2 style="color: darkolivegreen;">JavaScript Error Handling</h2>
+    <p id="error1"></p>
+
+    <script>
+        try {
+            addalert ("Welcom Guest!"); //But addalert is not a defined function -- this will throw a ReferanceError
+        }
+        catch (err) {
+            document.getElementById("error1").innerHTML = "1. " + err.message;
+        }
+        //err is the error object
+    </script>
+
+
+    <p id="error2"></p>
+    <script>
+        product = (a, b) => a*b;
+        try {
+            document.getElementById("error2").innerHTML = a;
+            //if the function is invoked here the result will be displayed
+            //if any variable is given the error message gets displayed
+        }
+        catch (err) {
+            document.getElementById("error2").innerHTML = "2. " + err.message;
+        }
+    </script>
+
+
+    <p id="error3"></p>
+    <script>
+        add = (x, y) => x+y;
+        try {
+            document.getElementById("error3").innerHTML = y;
+        }
+        catch (err) {
+            document.getElementById("error3").innerHTML = "3. " + err.message;
+        }
+    </script>
+
+    <p id="error4"></p>
+    <script>
+        substract = (z, d) => d-z;
+        try {
+            document.getElementById("error4").innerHTML = z;
+        }
+        catch (err) {
+            document.getElementById("error4").innerHTML = "4. " + err.message;
+        }
+    </script>
+
+    <p id="error5"></p>
+    <script>
+        var a = 7;
+        var b = 0;
+        var z = eval(a - b);
+        try {
+            document.getElementById("error5").innerHTML = x;
+        }
+        catch (err) {
+            document.getElementById("error5").innerHTML = "5. " + err.message;
+        }
+    </script>
+</body>
+
+</html>
