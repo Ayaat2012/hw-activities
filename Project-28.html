@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2 style="color: darkolivegreen;">JavaScript Async / Await</h2>
+    <h1 id="1"></h1>
+
+    <script>
+        async function add(a, b) {
+            let response = await (a + b);
+            display (response);
+        }
+        function display(some) {
+            document.getElementById("1").innerHTML = "1) " + some;
+        }
+        add(4, 8);
+    </script>
+
+    <h1 id="2"></h1>
+    <script>
+        async function substract(a, b) {
+            let response = await (a - b);
+            display (response);
+        }
+        function display(some) {
+            document.getElementById("2").innerHTML = "2) " + some;
+        }
+        substract(2025, 2012)
+    </script>
+</body>
+
+</html>
