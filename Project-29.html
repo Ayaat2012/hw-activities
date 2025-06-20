@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form name="myForm" onsubmit="validateForm();">
+        Name: <input type="text" name="fname">
+        Age: <input id="id1" type="number" min="18">
+        <input type="submit" value="Login">
+        <p id="message"></p>
+    </form>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"] ["fname"].value;
+            var y = document.forms["myForm"] ["id1"].value;
+            if (x == "" || y == "") {
+                alert("Name/Age cannot be empty");
+                return false;
+            }
+            else 
+            alert("Logged in successfully");
+        }
+    </script>
+</body>
+</html>
