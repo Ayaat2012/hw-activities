@@ -1,0 +1,33 @@
+body {
+    background-color: #252525;
+    font-family: "Baloo Tamma 2", cursive;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.navigation-link {
+    border: 2px solid transparent;
+}
+
+.navigation-link:hover {
+    text-decoration: dashed;
+    border-bottom: 2px solid #f5ba;
+    transition: 0.5s ease;
+}
+
+/* Main Heading Font */
+.m-heading {
+    font-family: "Roboto Slab", serif;
+}
+
+/* Main Container height */
+.m-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('cat-7575009_1280.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
