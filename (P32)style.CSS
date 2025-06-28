@@ -1,0 +1,38 @@
+/* Global Properties */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:#313552;
+    font-family: "Roboto Slab", serif;
+    scroll-behavior: smooth;
+}
+
+/* Main Heading Font */
+.m-heading {
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* Main Container height */
+.m-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('restaurant-6479818_1280.jpg');
+    background-attachment: fixed;
+    background-size: 300px;
+}
+
+/* Social Media Section */
+
+/* Add color to Social Media Links */
+.media_link {
+    padding: 1rem;
+    max-width: 15rem;
+    margin-left: 1rem;
+    border: 2px solid #f5ba09;
+    border-radius: 0.5rem;
+}
